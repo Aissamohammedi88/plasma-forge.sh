@@ -16,3 +16,104 @@ bin-release/
 # Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
 # should NOT be excluded as they contain compiler settings and other important
 # information for Eclipse / Flash Builder.
+
+---
+
+### 📄 `.gitignore`
+
+```gitignore
+# ═══════════════════════════════════════════════════════════════════
+# PLASMAFORGE — .gitignore
+# ═══════════════════════════════════════════════════════════════════
+
+# --- RUST ---
+target/
+**/*.rs.bk
+*.pdb
+Cargo.lock
+theme_engine
+theme_engine.exe
+
+# --- JAVA ---
+*.class
+*.jar
+*.war
+*.ear
+*.log
+hs_err_pid*
+replay_pid*
+ThemeGenerator.class
+
+# --- PYTHON ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+ENV/
+env/
+.python-version
+
+# --- BASH / SCRIPT ---
+*.pid
+*.log
+server.log
+
+# --- NODE.JS (Même si non utilisé, pour sécurité) ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- OS & EDITORS ---
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+.vs/
+*.sublime-workspace
+*.sublime-project
+
+# --- ARTIFACTS DE BUILD & SCREENSHOTS ---
+download/
+*.png
+*.jpg
+*.svg
+*.tmp
+tmp/
+temp/
+
+# --- SÉCURITÉ ---
+.env
+.env.local
+*.pem
+*.key
+*.crt
+secrets.json
+
+# --- BASES DE DONNÉES LOCALES ---
+*.db
+*.sqlite3
+*.sqlite
