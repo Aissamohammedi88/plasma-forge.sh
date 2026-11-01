@@ -9,7 +9,6 @@
   [![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)](#)
   [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](#)
 </div>
-
 ---
 
 ## 🧬 Overview
