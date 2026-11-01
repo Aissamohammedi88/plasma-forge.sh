@@ -21,11 +21,9 @@
 **La règle de PLASMAFORGE :** *Pas d'images statiques. Pas de frameworks. Juste des mathématiques et des binaires compilés.*
 
 ---
-
 ## ⚙️ Architecture Multi-Langages
 
 C'est la vraie prouesse de ce projet : **5 langages de programmation collaborent dans un seul fichier Bash**, sans aucun framework web externe.
-
 ```mermaid
 graph TD
     A[Bash Orchestrateur] -->|Compile| B(Rust Theme Engine)
