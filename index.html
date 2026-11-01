@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PLASMA FORGE — Generative Theme</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div id="bg-container"></div>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-trail" id="cursor-trail"></div>
+
+<header>
+  <nav>
+    <div class="logo">
+      <span class="logo-mark">◆</span>
+      <span class="logo-text">PLASMA<span class="accent">FORGE</span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero">Accueil</a></li>
+      <li><a href="#palette">Palette</a></li>
+      <li><a href="#code">Code</a></li>
+      <li><a href="#history">Historique</a></li>
+    </ul>
+    <button id="regenerate" class="btn-regen" title="Régénérer (R)">↻ Régénérer</button>
+  </nav>
+</header>
+
+<main>
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-tag">PLASMA FORGE v1.0 — Bash + Rust + Java + Python</div>
+      <h1>
+        <span class="word">Génère</span>
+        <span class="word">une</span>
+        <span class="word">identité</span>
+        <span class="word accent-text">unique</span>
+      </h1>
+      <p class="subtitle">
+        Chaque visite est différente. Palette calculée par <strong>Rust</strong>,
+        pattern SVG par <strong>Java</strong>, orchestration <strong>Bash</strong>,
+        rendu <strong>HTML/CSS/JS nouvelle génération</strong>.
+      </p>
+      <div class="hero-meta">
+        <span class="meta-item">Seed: <code id="meta-seed">—</code></span>
+        <span class="meta-item">Scheme: <code id="meta-scheme">—</code></span>
+        <span class="meta-item">Refresh: <code id="meta-timer">10s</code></span>
+        <span class="meta-item">Engine: <code id="meta-engine">—</code></span>
+      </div>
+      <div class="hero-cta">
+        <button class="btn-primary" onclick="document.getElementById('palette').scrollIntoView()">Voir palette</button>
+        <button class="btn-secondary" id="btn-save">Sauvegarder thème</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="palette">
+    <h2>Palette courante</h2>
+    <div class="palette-grid" id="palette-grid"></div>
+    <div class="color-info" id="color-info"></div>
+  </section>
+
+  <section id="code">
+    <h2>CSS Variables générées</h2>
+    <pre class="code-block" id="css-vars"></pre>
+    <h2 style="margin-top:32px">JSON thème complet</h2>
+    <pre class="code-block" id="json-theme"></pre>
+  </section>
+
+  <section id="history">
+    <h2>Historique des thèmes</h2>
+    <p class="hint">Clique sur un thème pour le restaurer.</p>
+    <div class="history-grid" id="history-grid"></div>
+  </section>
+
+  <section id="stack">
+    <h2>Stack technique</h2>
+    <div class="stack-grid">
+      <div class="stack-card"><div class="stack-icon">🦀</div><h3>Rust</h3><p>Theme engine : color theory, xorshift RNG, palette generation</p></div>
+      <div class="stack-card"><div class="stack-icon">☕</div><h3>Java</h3><p>SVG generator : Voronoi cells, plasma blobs, network lines</p></div>
+      <div class="stack-card"><div class="stack-icon">🐍</div><h3>Python</h3><p>HTTP server stdlib : routing, subprocess orchestration</p></div>
+      <div class="stack-card"><div class="stack-icon">⚡</div><h3>Bash</h3><p>Build orchestrator : compile Rust/Java, write assets, start server</p></div>
+      <div class="stack-card"><div class="stack-icon">🎨</div><h3>CSS NG</h3><p>color-mix, @property, backdrop-filter, container queries</p></div>
+      <div class="stack-card"><div class="stack-icon">📜</div><h3>JS NG</h3><p>Web Animations API, IntersectionObserver, fetch streaming</p></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>PLASMA FORGE v1.0 — Single bash file · 4 langages coordonnés</p>
+  <p>Auteur : Aissa Mohammedi (DGK) — Nexus Quantum · localhost:3400</p>
+</footer>
+
+<script src="/script.js"></script>
+</body>
+</html>
